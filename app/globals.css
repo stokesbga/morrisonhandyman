@@ -1,0 +1,49 @@
+@import "@fontsource-variable/fraunces";
+@import "@fontsource-variable/manrope";
+@import "tailwindcss";
+
+@theme {
+  /* Quiet-luxury palette */
+  --color-pine: #16211c;       /* near-black green — primary dark */
+  --color-pine-soft: #213028;  /* raised dark surface */
+  --color-pine-mute: #33453c;  /* borders on dark */
+  --color-brass: #b08d57;      /* muted brass accent */
+  --color-brass-deep: #96754a; /* brass hover */
+  --color-ivory: #faf8f3;      /* warm ivory background */
+  --color-cream: #f3efe6;      /* alternate light surface */
+  --color-line: #e5dfd2;       /* hairline borders on light */
+  --color-body: #50564f;       /* body text on light */
+
+  --font-sans: "Manrope Variable", ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", sans-serif;
+  --font-display: "Fraunces Variable", Georgia, "Times New Roman", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-ivory);
+  color: var(--color-body);
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga", "kern";
+}
+
+.font-display {
+  font-variation-settings: "SOFT" 40, "WONK" 0;
+}
+
+::selection {
+  background: var(--color-brass);
+  color: var(--color-ivory);
+}
+
+/* Small-caps utility label */
+.eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
