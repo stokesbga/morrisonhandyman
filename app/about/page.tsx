@@ -47,7 +47,7 @@ export default function AboutPage() {
             className="absolute -bottom-4 -left-4 h-full w-full border border-brass"
             aria-hidden="true"
           />
-          <div className="relative aspect-[3/4] overflow-hidden">
+          <div className="relative aspect-square overflow-hidden">
             <Image
               src="/images/drew-morrison.jpg"
               alt="Drew Morrison, owner of Morrison Handyman Services — New Hampshire handyman"
