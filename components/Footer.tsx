@@ -45,6 +45,14 @@ export default function Footer() {
               </a>
             </li>
             <li>
+              <a
+                href={SITE.emailHref}
+                className="break-all transition hover:text-brass"
+              >
+                {SITE.email}
+              </a>
+            </li>
+            <li>
               <Link href="/contact" className="transition hover:text-brass">
                 Request an estimate
               </Link>

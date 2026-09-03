@@ -43,6 +43,15 @@ export default function ContactPage() {
             </p>
           </div>
           <div>
+            <p className="eyebrow text-brass">Email</p>
+            <a
+              href={SITE.emailHref}
+              className="mt-3 block break-all text-sm font-semibold text-pine transition hover:text-brass"
+            >
+              {SITE.email}
+            </a>
+          </div>
+          <div>
             <p className="eyebrow text-brass">Service area</p>
             <p className="mt-3 text-sm leading-relaxed">
               Based in New Hampshire. Serving southern NH and nearby

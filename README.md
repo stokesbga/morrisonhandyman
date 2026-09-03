@@ -50,7 +50,8 @@ Any SMTP provider works. For Gmail:
 3. Set in `.env.local`:
    - `SMTP_HOST=smtp.gmail.com`, `SMTP_PORT=587`
    - `SMTP_USER` = the Gmail address, `SMTP_PASS` = the app password
-   - `CONTACT_EMAIL` = where Drew wants requests delivered
+   - `CONTACT_EMAIL` = where requests get delivered (defaults to
+     drewmorrisonhandyman@gmail.com if unset)
 
 ### 3. Deploy
 

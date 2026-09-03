@@ -53,6 +53,7 @@ function LocalBusinessJsonLd() {
     description: SITE.description,
     url: SITE.url,
     telephone: SITE.phoneE164,
+    email: SITE.email,
     founder: { "@type": "Person", name: SITE.owner },
     image: `${SITE.url}/images/pressure-washing-deck.jpg`,
     priceRange: "$$",

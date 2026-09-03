@@ -5,6 +5,8 @@ export const SITE = {
   phoneDisplay: "(603) 514-1814",
   phoneHref: "tel:+16035141814",
   phoneE164: "+16035141814",
+  email: "drewmorrisonhandyman@gmail.com",
+  emailHref: "mailto:drewmorrisonhandyman@gmail.com",
   // Set NEXT_PUBLIC_SITE_URL in production (e.g. https://morrisonhandymanservices.com)
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://morrisonhandymanservices.com",
   description:

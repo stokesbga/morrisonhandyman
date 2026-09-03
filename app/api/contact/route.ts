@@ -73,8 +73,9 @@ export async function POST(req: Request) {
   }
 
   // 2) Forward via email (if SMTP configured)
-  const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, CONTACT_EMAIL } =
-    process.env;
+  const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS } = process.env;
+  const CONTACT_EMAIL =
+    process.env.CONTACT_EMAIL ?? "drewmorrisonhandyman@gmail.com";
   if (SMTP_HOST && SMTP_USER && SMTP_PASS && CONTACT_EMAIL) {
     try {
       const transporter = nodemailer.createTransport({
