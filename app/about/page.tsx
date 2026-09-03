@@ -6,26 +6,26 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = {
   title: "About Drew Morrison — Your Local New England Handyman",
   description:
-    "Meet Drew Morrison, the craftsman behind Morrison Handyman Services. A dependable New Hampshire handyman serving homeowners across New England with honest pricing and quality workmanship.",
+    "Meet Drew Morrison of Morrison Handyman Services — a dependable New Hampshire handyman serving New England. Honest pricing, quality work. Call (603) 514-1814.",
   alternates: { canonical: "/about" },
 };
 
 const values = [
   {
-    title: "Punctual",
-    body: "Drew arrives when he says he will, and communicates the moment anything changes.",
+    title: "On time",
+    body: "He shows up when he says he will — and calls if anything changes.",
   },
   {
-    title: "Precise",
-    body: "No shortcuts, no band-aid fixes. Every job is finished the way he'd finish it in his own home.",
+    title: "Done right",
+    body: "No shortcuts, no band-aid fixes.",
   },
   {
-    title: "Fair",
-    body: "Straightforward proposals and honest pricing — the estimate you approve is the invoice you receive.",
+    title: "Fair price",
+    body: "The estimate you approve is the invoice you get.",
   },
   {
-    title: "Respectful",
-    body: "Floors covered, dust contained, and the workspace left cleaner than he found it.",
+    title: "Clean finish",
+    body: "Floors covered, dust contained, workspace left clean.",
   },
 ];
 
@@ -36,7 +36,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
           <p className="eyebrow text-brass">About</p>
           <h1 className="mt-5 max-w-3xl font-display text-5xl font-semibold leading-[1.05] tracking-tight text-pine sm:text-6xl">
-            Craftsmanship with a handshake behind it.
+            Meet Drew Morrison.
           </h1>
         </div>
       </section>
@@ -61,20 +61,17 @@ export default function AboutPage() {
 
         <div>
           <h2 className="font-display text-3xl font-semibold tracking-tight text-pine sm:text-4xl">
-            Meet Drew Morrison
+            A handyman you can count on
           </h2>
           <p className="mt-6 text-lg leading-relaxed">
-            Morrison Handyman Services was built on a simple conviction:
-            homeowners deserve a craftsman they can actually count on. Drew
-            Morrison brings years of hands-on experience across household
-            repairs, installations, painting, carpentry, and pressure washing —
-            the full range of skills a New England home demands.
+            Drew Morrison has years of hands-on experience across repairs,
+            installations, painting, carpentry, pressure washing, junk removal,
+            and moving — the full range of work a New England home needs.
           </p>
           <p className="mt-5 text-lg leading-relaxed">
-            From patching drywall to rebuilding weather-worn deck railings,
-            Drew approaches every project with the same care he&apos;d put into
-            his own place. It&apos;s why nearly all of his work comes through
-            repeat clients and word-of-mouth referrals across New Hampshire.
+            He treats every job like it&apos;s his own house. That&apos;s why
+            most of his work comes from repeat customers and referrals across
+            New Hampshire.
           </p>
 
           <div className="mt-12 grid gap-px overflow-hidden border border-line bg-line sm:grid-cols-2">

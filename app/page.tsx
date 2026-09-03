@@ -7,40 +7,40 @@ export const metadata: Metadata = {
   title:
     "New Hampshire Handyman | Morrison Handyman Services — Repairs, Painting, Carpentry & More",
   description:
-    "Looking for a reliable New Hampshire handyman? Morrison Handyman Services delivers expert household repairs, installations, painting, carpentry, and pressure washing across New England. Call (603) 514-1814 for a free estimate.",
+    "New Hampshire handyman serving New England. Repairs, installations, painting, carpentry, pressure washing, junk removal, and moving help. Free estimates — call (603) 514-1814.",
   alternates: { canonical: "/" },
 };
 
 const pillars = [
   {
-    title: "One craftsman, accountable to you",
-    body: "You deal directly with Drew from first call to final walkthrough — no crews rotating through your home.",
+    title: "You deal with Drew",
+    body: "One person from estimate to finish. No rotating crews.",
   },
   {
-    title: "Transparent proposals",
-    body: "A clear scope and an honest price before any work begins. No surprises at the invoice.",
+    title: "Upfront pricing",
+    body: "A clear price before work starts. The estimate you approve is the invoice you get.",
   },
   {
     title: "Built for New England",
-    body: "Materials and methods chosen to stand up to hard winters and humid summers.",
+    body: "Materials and methods that stand up to hard winters.",
   },
 ];
 
 const steps = [
   {
     n: "01",
-    title: "Consultation",
-    body: "A brief call or visit to understand the project, your home, and your standards.",
+    title: "Call",
+    body: "Tell Drew what you need — phone, text, or the contact form.",
   },
   {
     n: "02",
-    title: "Proposal",
-    body: "A written estimate with a defined scope, timeline, and price — reviewed together.",
+    title: "Estimate",
+    body: "A clear scope and price, in writing.",
   },
   {
     n: "03",
-    title: "Craftsmanship",
-    body: "Work executed cleanly and precisely, with your home treated like Drew's own.",
+    title: "Done",
+    body: "Work done right, workspace left clean.",
   },
 ];
 
@@ -55,13 +55,12 @@ export default function HomePage() {
               New Hampshire · New England
             </p>
             <h1 className="mt-5 font-display text-5xl font-semibold leading-[1.05] tracking-tight text-pine sm:text-6xl md:text-7xl">
-              The New Hampshire handyman for homes held to a higher standard.
+              A New Hampshire handyman who does the job right.
             </h1>
             <p className="mt-7 max-w-xl text-lg leading-relaxed">
-              Morrison Handyman Services brings considered craftsmanship to
-              household repairs, installations, painting, carpentry, and
-              pressure washing — for homeowners across New England who expect
-              the details done right.
+              Repairs, installations, painting, carpentry, pressure washing,
+              junk removal, and moving help. Call Drew Morrison for a straight
+              answer and a fair price.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-6">
               <Link
@@ -87,7 +86,7 @@ export default function HomePage() {
             <div className="relative aspect-[3/4] max-h-[540px] w-full overflow-hidden">
               <Image
                 src="/images/pressure-washing-deck.jpg"
-                alt="Deck restoration by pressure washing — Morrison Handyman Services, New Hampshire"
+                alt="Deck pressure washing — Morrison Handyman Services, New Hampshire"
                 fill
                 className="object-cover"
                 sizes="(min-width: 768px) 45vw, 100vw"
@@ -98,7 +97,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Services — numbered editorial list */}
+      {/* Services — numbered list */}
       <section className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div>
@@ -144,16 +143,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Statement + pillars — dark */}
+      {/* Why Morrison — dark */}
       <section className="bg-pine text-ivory">
         <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
-          <p className="eyebrow text-brass">The standard</p>
+          <p className="eyebrow text-brass">Why Morrison</p>
           <p className="mt-6 max-w-3xl font-display text-3xl font-medium leading-snug tracking-tight sm:text-4xl">
-            “Every home tells you how it wants to be cared for. The work is
-            listening — then doing it properly.”
-          </p>
-          <p className="mt-4 text-sm text-ivory/50">
-            — Drew Morrison, Owner
+            Show up on time. Do it right. Charge what was quoted.
           </p>
 
           <div className="mt-16 grid gap-10 border-t border-pine-mute pt-12 md:grid-cols-3">
@@ -173,9 +168,9 @@ export default function HomePage() {
 
       {/* Process */}
       <section className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
-        <p className="eyebrow text-brass">The process</p>
+        <p className="eyebrow text-brass">How it works</p>
         <h2 className="mt-4 max-w-2xl font-display text-4xl font-semibold tracking-tight text-pine sm:text-5xl">
-          Simple, considered, and on your schedule
+          Three steps, no surprises
         </h2>
         <div className="mt-14 grid gap-px overflow-hidden border border-line bg-line md:grid-cols-3">
           {steps.map((s) => (
@@ -195,10 +190,12 @@ export default function HomePage() {
       {/* CTA */}
       <section className="border-t border-line bg-cream">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-7 px-5 py-20 text-center sm:px-8">
-          <p className="eyebrow text-brass">Begin with a conversation</p>
           <h2 className="max-w-2xl font-display text-4xl font-semibold tracking-tight text-pine sm:text-5xl">
-            Let&apos;s take care of your home, properly.
+            Ready to get started?
           </h2>
+          <p className="max-w-xl text-lg">
+            Call or send a message. Estimates are free.
+          </p>
           <div className="mt-2 flex flex-wrap items-center justify-center gap-6">
             <Link
               href="/contact"

@@ -46,8 +46,7 @@ export default function ContactForm() {
           Request received.
         </h3>
         <p className="mx-auto mt-3 max-w-md text-lg leading-relaxed">
-          Thank you for reaching out — Drew will be in touch shortly. Need an
-          answer sooner? Call{" "}
+          Drew will get back to you shortly. Need an answer sooner? Call{" "}
           <a
             href="tel:+16035141814"
             className="font-semibold text-brass-deep underline-offset-4 hover:underline"
@@ -130,7 +129,7 @@ export default function ContactForm() {
 
       <div>
         <label htmlFor="service" className={labelCls}>
-          Nature of the project
+          Type of work
         </label>
         <select
           id="service"
@@ -150,7 +149,7 @@ export default function ContactForm() {
 
       <div>
         <label htmlFor="message" className={labelCls}>
-          About the project <span className="text-brass">*</span>
+          Job details <span className="text-brass">*</span>
         </label>
         <textarea
           id="message"
@@ -159,7 +158,7 @@ export default function ContactForm() {
           rows={4}
           maxLength={4000}
           className={`${fieldCls} resize-y`}
-          placeholder="Describe the work — what needs doing, rough timeline, anything else Drew should know."
+          placeholder="What needs doing, rough timeline, anything else Drew should know."
         />
       </div>
 

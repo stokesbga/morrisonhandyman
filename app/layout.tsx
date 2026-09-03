@@ -22,6 +22,10 @@ export const metadata: Metadata = {
     "carpentry New Hampshire",
     "pressure washing NH",
     "home installations New England",
+    "junk removal New Hampshire",
+    "trash removal NH",
+    "moving help New Hampshire",
+    "furniture moving NH",
   ],
   openGraph: {
     type: "website",

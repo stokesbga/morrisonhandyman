@@ -11,8 +11,9 @@ export default function Footer() {
           </p>
           <p className="eyebrow mt-1 text-brass">Handyman Services</p>
           <p className="mt-5 max-w-xs text-sm leading-relaxed">
-            Considered craftsmanship for New Hampshire and New England homes —
-            repairs, installations, painting, carpentry, and pressure washing.
+            New Hampshire handyman serving New England. Repairs, installations,
+            painting, carpentry, pressure washing, junk removal, and moving
+            help.
           </p>
         </div>
 
@@ -49,7 +50,7 @@ export default function Footer() {
               </Link>
             </li>
             <li className="pt-3 text-ivory/45">
-              Serving New Hampshire &amp; the greater New England region.
+              Serving New Hampshire &amp; New England.
             </li>
           </ul>
         </div>

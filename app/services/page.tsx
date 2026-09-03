@@ -5,9 +5,9 @@ import { SITE, SERVICES } from "@/lib/site";
 
 export const metadata: Metadata = {
   title:
-    "Handyman Services in New Hampshire — Repairs, Painting, Carpentry, Pressure Washing",
+    "Handyman Services in New Hampshire — Repairs, Painting, Carpentry, Junk Removal & More",
   description:
-    "Full list of Morrison Handyman Services offerings: household repairs, installations, interior & exterior painting, carpentry, and pressure washing for New Hampshire and New England homes. Free estimates — call (603) 514-1814.",
+    "Morrison Handyman Services: household repairs, installations, painting, carpentry, pressure washing, junk removal, and truck-assisted moving for New Hampshire and New England homes. Free estimates — call (603) 514-1814.",
   alternates: { canonical: "/services" },
 };
 
@@ -18,12 +18,11 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
           <p className="eyebrow text-brass">Services</p>
           <h1 className="mt-5 max-w-3xl font-display text-5xl font-semibold leading-[1.05] tracking-tight text-pine sm:text-6xl">
-            Five disciplines. One standard.
+            Handyman services in New Hampshire
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed">
-            Handyman services for New Hampshire and New England homes — each
-            delivered with a defined scope, an honest price, and workmanship
-            that holds up.
+            Seven services for New Hampshire and New England homes. Every job
+            gets a clear price and honest work.
           </p>
         </div>
       </section>
@@ -93,8 +92,8 @@ export default function ServicesPage() {
               Not sure which service you need?
             </h2>
             <p className="mt-2 max-w-xl text-ivory/60">
-              Describe the project and Drew will tell you exactly what it takes
-              — no obligation.
+              Describe the job and Drew will tell you what it takes. No
+              obligation.
             </p>
           </div>
           <a

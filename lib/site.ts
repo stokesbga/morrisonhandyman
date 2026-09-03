@@ -8,7 +8,7 @@ export const SITE = {
   // Set NEXT_PUBLIC_SITE_URL in production (e.g. https://morrisonhandymanservices.com)
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://morrisonhandymanservices.com",
   description:
-    "Morrison Handyman Services is a trusted New Hampshire handyman serving homeowners across New England with household repairs, installations, painting, carpentry, and pressure washing.",
+    "Morrison Handyman Services is a New Hampshire handyman serving New England: repairs, installations, painting, carpentry, pressure washing, junk removal, and moving help. Call (603) 514-1814.",
   areaServed: [
     "New Hampshire",
     "New England",
@@ -24,17 +24,16 @@ export type Service = {
   short: string;
   long: string;
   bullets: string[];
-  icon: "wrench" | "drill" | "roller" | "saw" | "spray";
+  icon: "wrench" | "drill" | "roller" | "saw" | "spray" | "trash" | "truck";
 };
 
 export const SERVICES: Service[] = [
   {
     slug: "household-repairs",
     title: "Household Repairs",
-    short:
-      "Fast, reliable fixes for the everyday breakdowns every New England home runs into.",
+    short: "Drywall, doors, faucets, trim — the small jobs that pile up.",
     long:
-      "From sticking doors and leaky faucets to drywall patches and weather-worn trim, Morrison Handyman Services handles the repair list that never seems to shrink. One call clears the whole list — done right, done once.",
+      "Drywall patches, sticking doors, leaky faucets, worn trim, caulking. One call clears the list, usually in a single visit.",
     bullets: [
       "Drywall patching & repair",
       "Door & window adjustments",
@@ -47,26 +46,24 @@ export const SERVICES: Service[] = [
   {
     slug: "installations",
     title: "Installations",
-    short:
-      "Professional installation of fixtures, appliances, and home hardware — level, secure, and code-conscious.",
+    short: "TV mounts, ceiling fans, fixtures, and appliances — installed level and solid.",
     long:
-      "Whether it's a new ceiling fan, shelving, a TV mount, or a full room of fixtures, everything gets installed square, solid, and safe. No wobbles, no shortcuts.",
+      "Ceiling fans, TV mounts, shelving, light fixtures, appliances, doors, and hardware. Installed level, secure, and usually in one trip.",
     bullets: [
       "TV mounts & shelving",
       "Ceiling fans & light fixtures",
       "Appliance hookups",
       "Doors, locks & hardware",
-      "Blinds, curtains & more",
+      "Blinds & curtains",
     ],
     icon: "drill",
   },
   {
     slug: "painting",
     title: "Painting",
-    short:
-      "Interior and exterior painting with crisp lines and clean job sites.",
+    short: "Interior and exterior painting with clean lines and clean job sites.",
     long:
-      "Careful prep, quality paint, and straight cut lines — the difference between a paint job and a professional finish. Interior rooms, trim, decks, and exterior touch-ups across New Hampshire.",
+      "Proper prep, quality paint, straight lines. Rooms, ceilings, trim, cabinets, decks, and exterior touch-ups.",
     bullets: [
       "Interior rooms & ceilings",
       "Trim, doors & cabinets",
@@ -79,10 +76,9 @@ export const SERVICES: Service[] = [
   {
     slug: "carpentry",
     title: "Carpentry",
-    short:
-      "Custom carpentry and woodwork built to handle New England weather and wear.",
+    short: "Deck repairs, trim, shelving, and rot replacement — built to last.",
     long:
-      "Deck repairs, custom shelving, trim work, and structural fixes — measured twice, built to last. Quality carpentry from a handyman who takes pride in the details.",
+      "Deck repairs, railings, trim, custom shelving, stairs, and rot replacement. Measured twice, built to handle New England weather.",
     bullets: [
       "Deck repairs & railings",
       "Custom shelving & built-ins",
@@ -95,10 +91,9 @@ export const SERVICES: Service[] = [
   {
     slug: "pressure-washing",
     title: "Pressure Washing",
-    short:
-      "Bring decks, siding, and walkways back to life — years of grime gone in an afternoon.",
+    short: "Decks, siding, and driveways — years of grime gone in an afternoon.",
     long:
-      "New England winters leave their mark. Professional pressure washing strips away mildew, moss, and built-up grime from decks, siding, patios, and driveways — restoring surfaces and protecting your investment.",
+      "Mildew, moss, and grime stripped from decks, siding, patios, and driveways. Good on its own or as prep for paint and stain.",
     bullets: [
       "Decks & patios",
       "House siding",
@@ -107,5 +102,35 @@ export const SERVICES: Service[] = [
       "Pre-paint surface prep",
     ],
     icon: "spray",
+  },
+  {
+    slug: "junk-removal",
+    title: "Junk & Trash Removal",
+    short: "Junk hauled out of basements, garages, attics, and yards.",
+    long:
+      "Furniture, appliances, debris, and clutter — loaded, hauled away, and disposed of properly. Cleanouts big and small.",
+    bullets: [
+      "Furniture & appliance haul-away",
+      "Basement & garage cleanouts",
+      "Yard waste & storm debris",
+      "Renovation debris",
+      "Dump runs",
+    ],
+    icon: "trash",
+  },
+  {
+    slug: "moving-help",
+    title: "Truck-Assisted Moving",
+    short: "Small moves and single-item hauls with a pickup truck and an extra set of hands.",
+    long:
+      "Pickup truck plus muscle for small moves, single items, furniture deliveries, and dump runs. Loaded carefully, moved on your schedule.",
+    bullets: [
+      "Single-item moves",
+      "Small apartment & dorm moves",
+      "Furniture pickup & delivery",
+      "Loading & unloading help",
+      "In-home furniture rearranging",
+    ],
+    icon: "truck",
   },
 ];
