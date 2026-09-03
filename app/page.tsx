@@ -83,10 +83,10 @@ export default function HomePage() {
               className="absolute -bottom-4 -right-4 h-full w-full border border-brass"
               aria-hidden="true"
             />
-            <div className="relative aspect-[3/4] max-h-[540px] w-full overflow-hidden">
+            <div className="relative aspect-[4/3] w-full overflow-hidden">
               <Image
-                src="/images/pressure-washing-deck.jpg"
-                alt="Deck pressure washing — Morrison Handyman Services, New Hampshire"
+                src="/images/deck-build.jpg"
+                alt="New deck with stairs and railings built by Morrison Handyman Services in New Hampshire"
                 fill
                 className="object-cover"
                 sizes="(min-width: 768px) 45vw, 100vw"

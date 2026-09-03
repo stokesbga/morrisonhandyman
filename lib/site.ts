@@ -27,6 +27,7 @@ export type Service = {
   long: string;
   bullets: string[];
   icon: "wrench" | "drill" | "roller" | "saw" | "spray" | "trash" | "truck";
+  image?: { src: string; alt: string };
 };
 
 export const SERVICES: Service[] = [
@@ -89,6 +90,10 @@ export const SERVICES: Service[] = [
       "Rot repair & replacement",
     ],
     icon: "saw",
+    image: {
+      src: "/images/carpentry-stairs.jpg",
+      alt: "New deck stairs and railings built by Morrison Handyman Services in New Hampshire",
+    },
   },
   {
     slug: "pressure-washing",
@@ -104,6 +109,10 @@ export const SERVICES: Service[] = [
       "Pre-paint surface prep",
     ],
     icon: "spray",
+    image: {
+      src: "/images/fence-clean.jpg",
+      alt: "White vinyl fence after pressure washing by Morrison Handyman Services",
+    },
   },
   {
     slug: "junk-removal",
@@ -134,5 +143,9 @@ export const SERVICES: Service[] = [
       "In-home furniture rearranging",
     ],
     icon: "truck",
+    image: {
+      src: "/images/moving-truck.jpg",
+      alt: "Pickup truck loaded for a small move — Morrison Handyman Services moving help",
+    },
   },
 ];

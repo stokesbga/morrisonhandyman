@@ -55,7 +55,7 @@ export default function ServicesPage() {
               </Link>
             </div>
             <div>
-              {s.slug === "pressure-washing" && (
+              {s.image && (
                 <div className="relative mb-8">
                   <div
                     className="absolute -bottom-3 -right-3 h-full w-full border border-brass"
@@ -63,8 +63,8 @@ export default function ServicesPage() {
                   />
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <Image
-                      src="/images/pressure-washing-deck.jpg"
-                      alt="Deck pressure washing in progress by Morrison Handyman Services, New Hampshire"
+                      src={s.image.src}
+                      alt={s.image.alt}
                       fill
                       className="object-cover"
                       sizes="(min-width: 768px) 340px, 100vw"
