@@ -72,20 +72,18 @@ export async function POST(req: Request) {
     }
   }
 
-  // 2) Forward via email (if SMTP configured)
-  const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS } = process.env;
+  // 2) Forward via Gmail (if configured)
+  const { GMAIL_USER, GMAIL_APP_PASSWORD } = process.env;
   const CONTACT_EMAIL =
     process.env.CONTACT_EMAIL ?? "drewmorrisonhandyman@gmail.com";
-  if (SMTP_HOST && SMTP_USER && SMTP_PASS && CONTACT_EMAIL) {
+  if (GMAIL_USER && GMAIL_APP_PASSWORD) {
     try {
       const transporter = nodemailer.createTransport({
-        host: SMTP_HOST,
-        port: Number(SMTP_PORT ?? 587),
-        secure: Number(SMTP_PORT ?? 587) === 465,
-        auth: { user: SMTP_USER, pass: SMTP_PASS },
+        service: "gmail",
+        auth: { user: GMAIL_USER, pass: GMAIL_APP_PASSWORD },
       });
       await transporter.sendMail({
-        from: `"Morrison Handyman Website" <${SMTP_USER}>`,
+        from: `"Morrison Handyman Website" <${GMAIL_USER}>`,
         to: CONTACT_EMAIL,
         replyTo: email || undefined,
         subject: `New estimate request from ${name}${service ? ` — ${service}` : ""}`,

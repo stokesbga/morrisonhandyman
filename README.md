@@ -41,15 +41,13 @@ The site runs without any env vars — the contact form just returns a friendly
 Submissions appear in the `contact_submissions` table (RLS is enabled, so only
 the service role — i.e. the API route — can read them).
 
-### 2. Email forwarding (SMTP / Nodemailer)
+### 2. Email forwarding (Gmail / Nodemailer)
 
-Any SMTP provider works. For Gmail:
-
-1. Turn on 2-Step Verification for the Google account.
+1. Turn on 2-Step Verification for the Gmail account.
 2. Create an **App Password** (Google Account → Security → App passwords).
 3. Set in `.env.local`:
-   - `SMTP_HOST=smtp.gmail.com`, `SMTP_PORT=587`
-   - `SMTP_USER` = the Gmail address, `SMTP_PASS` = the app password
+   - `GMAIL_USER` = the Gmail address
+   - `GMAIL_APP_PASSWORD` = the app password
    - `CONTACT_EMAIL` = where requests get delivered (defaults to
      drewmorrisonhandyman@gmail.com if unset)
 
